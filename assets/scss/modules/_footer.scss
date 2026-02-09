@@ -1,0 +1,51 @@
+@use "../abstract"as *;
+
+.footer {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        @include md {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &__linkedin {
+            display: flex;
+            align-items: center;
+
+            @include md {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__email {
+            display: flex;
+            align-items: center;
+
+            @include md {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__phone {
+            display: flex;
+            align-items: center;
+        }
+
+        &__icon {
+            margin-right: 15px;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    &__block a {
+        text-decoration: none;
+    }
+}

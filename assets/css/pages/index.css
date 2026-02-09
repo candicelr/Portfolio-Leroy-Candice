@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+/*colors*/
+/*polices*/
+/*size*/
+/*mobile*/
+/*desktop*/
+/*style*/
+@keyframes imageFromBack {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) translateZ(-300px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.08) translateZ(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 30px 100px;
+  padding-top: 100px;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about {
+    margin-top: 50px;
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about {
+    padding-top: 80;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+.about__block1 {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  .about__block1 {
+    align-items: center;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about__block1 {
+    align-items: center;
+    width: 100%;
+  }
+}
+.about__block1__title {
+  font-family: "GFS Didot", serif;
+  margin-bottom: 50px;
+  font-size: 48px;
+  color: #202329;
+}
+@media screen and (max-width: 1200px) {
+  .about__block1__title {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .about__block1__title {
+    margin-top: -20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__block1__title {
+    font-size: 36px;
+  }
+}
+.about__block1__text {
+  font-size: 20px;
+  color: #202329;
+  margin-bottom: 80px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1000px) {
+  .about__block1__text {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__block1__text {
+    font-size: 16px;
+    margin-right: 0;
+  }
+}
+.about__block1__buttonblock__button {
+  background-color: #202329;
+  height: 50px;
+  width: 180px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+@media screen and (max-width: 700px) {
+  .about__block1__buttonblock__button {
+    margin-bottom: 40px;
+  }
+}
+.about__block1__buttonblock__button:hover {
+  color: #202329;
+  background-color: #FBF7EC;
+  border: 1px solid #202329;
+}
+.about__block1__buttonblock__button {
+  text-decoration: none;
+  color: #FBF7EC;
+}
+.about__block2 {
+  width: 40%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .about__block2 {
+    height: 70vh;
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__block2 {
+    height: 70vh;
+    margin-top: 30px;
+  }
+}
+.about__block2__img {
+  height: auto;
+  width: 80%;
+  opacity: 0;
+  animation: imageFromBack 1.2s ease-out forwards;
+  animation-delay: 0.3s;
+}
+@media screen and (max-width: 1000px) {
+  .about__block2__img {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  .about__block2__img {
+    width: 40vw;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about__block2__img {
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__block2__img {
+    margin-bottom: 20px;
+  }
+}
+
+.skills {
+  position: relative;
+  padding: 30px 0;
+}
+.skills__block1 {
+  position: relative;
+}
+.skills__block1__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.skills__block1 > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.skills__block1__title {
+  margin-bottom: 100px;
+}
+.skills__block1__cards {
+  display: flex;
+  gap: 50px;
+}
+@media screen and (max-width: 1000px) {
+  .skills__block1__cards {
+    flex-direction: column;
+  }
+}
+.skills__block1__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 12rem;
+  background-color: rgba(32, 35, 41, 0.9);
+  box-shadow: 1px 1px 5px #202329;
+  color: #FBF7EC;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .skills__block1__card {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .skills__block1__card {
+    width: 15rem;
+    height: 13rem;
+  }
+}
+.skills__block1__card > span {
+  font-size: 48px;
+  color: #FBF7EC;
+}
+
+.work {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work__block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img5 img3" "img1 img5 img3" "img4 img5 img6" "img4 img5 img6" "img4 img7 img7";
+  gap: 24px;
+  padding: 150px;
+}
+@media screen and (max-width: 1000px) {
+  .work__block {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .work__block {
+    padding: 60px;
+  }
+}
+.work__block__img1 {
+  grid-area: img1;
+}
+.work__block__img2 {
+  grid-area: img2;
+}
+.work__block__img3 {
+  grid-area: img3;
+}
+.work__block__img4 {
+  grid-area: img4;
+}
+.work__block__img5 {
+  grid-area: img5;
+}
+.work__block__img6 {
+  grid-area: img6;
+}
+.work__block__img7 {
+  grid-area: img7;
+}
+.work__block .img-wrap {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.work__block .img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.work__block .img-wrap::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+}
+.work__block .img-wrap:hover::after {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,105 @@
+@use "../modules/project/_gallery1";
+@use "../modules/project/_columnGallery";
+@use "../modules/project/_gallery2";
+@use "../abstract"as *;
+
+.presentation {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+
+    @include xxl {
+        margin-top: 140px;
+    }
+
+    @include xl {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 140px;
+    }
+
+    @include md {
+        align-items: center;
+        text-align: center;
+        margin-top: 120px;
+    }
+
+    &__informations {
+        width: 40%;
+        height: auto;
+        margin-right: 100px;
+        margin-left: 100px;
+
+        @include xxl {
+            margin-right: 50px;
+            margin-left: 70px;
+        }
+
+        @include xl {
+            display: flex;
+            flex-direction: column;
+            margin-right: 0px;
+            justify-content: center;
+        }
+
+        @include md {
+            margin-right: 0px;
+            margin-left: 0px;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        &__littletitle {
+            margin-bottom: 10px;
+            margin-top: 30px;
+            font-size: $title-size-mobile;
+
+            @include md {
+                font-size: $little-title-mobile;
+            }
+        }
+
+        &__text {
+            font-size: $text-size;
+        }
+
+    }
+
+    &__description {
+        width: 60%;
+        height: auto;
+        margin-top: 150px;
+        margin-right: 100px;
+        margin-left: 0;
+
+        @include xxl {
+            margin-right: 60px;
+            margin-left: -80px;
+            padding-top: 100px;
+            margin-top: 20px;
+        }
+
+        @include xl {
+            margin-top: 0px;
+            padding-top: 40px;
+            margin-bottom: 10px;
+            margin-left: 0px;
+            padding-right: 100px;
+            padding-left: 68px;
+            width: 100%;
+        }
+
+        @include md {
+            margin-right: 0px;
+            margin-left: 0px;
+            padding: 50px;
+        }
+
+        &__text {
+            font-size: $text-size;
+        }
+    }
+}

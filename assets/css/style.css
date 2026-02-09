@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*colors*/
+/*polices*/
+/*size*/
+/*mobile*/
+/*desktop*/
+/*style*/
+.navbar {
+  background-color: #FBF7EC;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  box-shadow: 1px 1px 8px black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.navbar__lists {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__lists__list2 {
+  display: flex;
+  gap: 50px;
+}
+.navbar__lists__list2 li {
+  font-size: 20px;
+}
+@media screen and (max-width: 700px) {
+  .navbar__lists__list2 li {
+    font-size: 25px;
+  }
+}
+.navbar__lists__list1 {
+  display: flex;
+}
+.navbar__categories {
+  display: flex;
+  font-size: 20px;
+  list-style: none;
+}
+.navbar__categories:hover {
+  font-weight: 600;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #202329;
+}
+.navbar__icon {
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 700px) {
+  .navbar ul > div.navbar__lists__list2 {
+    position: fixed;
+    background: #FBF7EC;
+    height: 120vh;
+    width: 16rem;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 8px black;
+    transform: translateX(18rem);
+    transition: 0.3s;
+  }
+  .navbar ul > div.navbar__lists__list2--open {
+    transform: translateX(0);
+  }
+}
+.navbar__burger-button {
+  display: none;
+  background: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  transition: 0.3s;
+}
+@media screen and (max-width: 700px) {
+  .navbar__burger-button {
+    display: block;
+  }
+}
+.navbar__burger-button div {
+  width: 100%;
+  height: 0.3rem;
+  background: #202329;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.navbar__burger-button > div .navbar__burger-button__top {
+  top: auto;
+  bottom: 200%;
+}
+.navbar__burger-button > div .navbar__burger-button__bottom {
+  top: 300%;
+}
+.navbar__burger-button--open > div {
+  transform: translateY(-50%) rotate(45deg);
+}
+.navbar__burger-button--open > div .navbar__burger-button__top {
+  top: auto;
+  bottom: 0;
+  transform: translateY(0) rotate(90deg);
+}
+.navbar__burger-button--open > div .navbar__burger-button__bottom {
+  top: 0;
+  transform: translateY(0);
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.footer__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  .footer__block {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.footer__block__linkedin {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .footer__block__linkedin {
+    margin-bottom: 15px;
+  }
+}
+.footer__block__email {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .footer__block__email {
+    margin-bottom: 15px;
+  }
+}
+.footer__block__phone {
+  display: flex;
+  align-items: center;
+}
+.footer__block__icon {
+  margin-right: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.footer__block a {
+  text-decoration: none;
+}
+
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FBF7EC;
+}
+
+h1 {
+  font-family: "GFS Didot", serif;
+  font-size: 48px;
+  color: #202329;
+}
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-family: "GFS Didot", serif;
+  font-size: 48px;
+  color: #202329;
+}
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+a {
+  font-size: 20px;
+  color: #202329;
+}
+
+/*# sourceMappingURL=style.css.map */

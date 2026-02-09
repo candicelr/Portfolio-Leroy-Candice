@@ -1,0 +1,83 @@
+@use "../../abstract"as *;
+
+.work {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__block {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas: "img1 img2 img3""img1 img2 img3""img1 img5 img3""img1 img5 img3""img4 img5 img6""img4 img5 img6""img4 img7 img7";
+        gap: 24px;
+        padding: 150px;
+
+        @include xl {
+            display: flex;
+            flex-direction: column;
+            padding: 100px;
+        }
+
+        @include sm {
+            padding: 60px;
+        }
+
+        &__img1 {
+            grid-area: img1;
+        }
+
+        &__img2 {
+            grid-area: img2;
+        }
+
+        &__img3 {
+            grid-area: img3;
+        }
+
+        &__img4 {
+            grid-area: img4;
+        }
+
+        &__img5 {
+            grid-area: img5;
+        }
+
+        &__img6 {
+            grid-area: img6;
+        }
+
+        &__img7 {
+            grid-area: img7;
+        }
+
+    }
+
+    &__block {
+        .img-wrap {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .img-wrap::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0);
+            transition: 0.3s ease;
+        }
+
+        .img-wrap:hover::after {
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}

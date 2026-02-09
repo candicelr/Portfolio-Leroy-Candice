@@ -1,0 +1,42 @@
+@use "../abstract"as *;
+@use "./reset";
+@use "../modules/_navbar";
+@use "../modules/_footer";
+
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+}
+
+h1 {
+    font-family: $title-font;
+    font-size: $title-size;
+    color: $text-color;
+    @include sm {
+                font-size: $title-size-mobile;
+            }
+}
+
+h2 {
+    font-family: $title-font;
+    font-size: $title-size;
+    color: $text-color;
+    @include sm {
+                font-size: $title-size-mobile;
+            }
+}
+
+
+
+a{
+    font-size: $text-size;
+    color: $text-color;
+}
