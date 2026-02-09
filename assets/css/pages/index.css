@@ -156,7 +156,7 @@
 @media screen and (max-width: 500px) {
   .about__block2 {
     height: 70vh;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }
 .about__block2__img {
@@ -185,6 +185,11 @@
 @media screen and (max-width: 500px) {
   .about__block2__img {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .about__block2__img {
+    margin-bottom: 0px;
   }
 }
 
@@ -276,7 +281,7 @@
 }
 @media screen and (max-width: 500px) {
   .work__block {
-    padding: 60px;
+    padding: 30px;
   }
 }
 .work__block__img1 {
