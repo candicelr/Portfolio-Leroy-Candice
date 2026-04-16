@@ -257,6 +257,11 @@
   justify-content: center;
   margin-bottom: 100px;
 }
+@media screen and (max-width: 500px) {
+  .bloc-pdf {
+    margin-top: 50px;
+  }
+}
 
 .desktoppdf {
   display: block;
@@ -269,6 +274,7 @@
 
 .mobilepdf {
   display: none;
+  width: 200px;
 }
 @media screen and (max-width: 500px) {
   .mobilepdf {

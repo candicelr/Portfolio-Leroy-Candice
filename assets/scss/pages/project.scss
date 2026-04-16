@@ -127,6 +127,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    @include sm{
+        margin-top: 50px;
+    }
 }
 .desktoppdf{
     display: block;
@@ -137,6 +140,7 @@
 
 .mobilepdf{
     display: none;
+    width: 200px;
     @include sm{
         display: block;
     }
