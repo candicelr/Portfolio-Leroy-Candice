@@ -83,6 +83,7 @@
 
             @include sm {
                 font-size: $title-size-mobile;
+                margin-top: -50px;
             }
         }
 

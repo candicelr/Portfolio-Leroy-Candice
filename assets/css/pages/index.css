@@ -95,6 +95,7 @@
 @media screen and (max-width: 500px) {
   .about__block1__title {
     font-size: 36px;
+    margin-top: -50px;
   }
 }
 .about__block1__text {
@@ -189,7 +190,7 @@
 }
 @media screen and (max-width: 375px) {
   .about__block2__img {
-    margin-bottom: -80px;
+    margin-bottom: -150px;
   }
 }
 
