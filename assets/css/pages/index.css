@@ -268,8 +268,8 @@
 .work__block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(8, auto);
-  grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img5 img3" "img1 img5 img3" "img4 img5 img6" "img4 img5 img6" "img4 img7 img7" "img8 img8 img9";
+  grid-template-rows: repeat(10, auto);
+  grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img5 img3" "img1 img5 img3" "img4 img5 img6" "img4 img5 img6" "img4 img7 img7" "img8 img8 img9" "img10 img11 img9";
   gap: 24px;
   padding: 150px;
 }
@@ -311,6 +311,12 @@
 }
 .work__block__img9 {
   grid-area: img9;
+}
+.work__block__img10 {
+  grid-area: img10;
+}
+.work__block__img11 {
+  grid-area: img11;
 }
 .work__block .img-wrap {
   position: relative;

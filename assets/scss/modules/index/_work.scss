@@ -9,7 +9,7 @@
     &__block {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(8, auto);
+        grid-template-rows: repeat(10, auto);
         grid-template-areas:
         "img1 img2 img3"
         "img1 img2 img3"
@@ -18,7 +18,8 @@
         "img4 img5 img6"
         "img4 img5 img6"
         "img4 img7 img7"
-        "img8 img8 img9"; 
+        "img8 img8 img9"
+        "img10 img11 img9"; 
         gap: 24px;
         padding: 150px;
         
@@ -66,7 +67,12 @@
         &__img9{
             grid-area: img9;
         }
-
+        &__img10{
+            grid-area: img10;
+        }
+        &__img11{
+            grid-area: img11;
+        }
     }
 
     &__block {

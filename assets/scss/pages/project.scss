@@ -150,3 +150,34 @@
         justify-content: center;
     }
 }
+.gallery2 {
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+    @include sm{
+        margin-top: 0px;
+    }
+
+  &__blockvideo1 {
+    display: flex;
+    justify-content: center;
+    gap: 60px; 
+
+    @include lg{
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__blockvideo1 video {
+    width: 25%; 
+    height: auto;
+    border-radius: 10px;
+
+    @include lg{
+        width: 80%;
+    } 
+
+  }
+  }
