@@ -133,15 +133,20 @@
 }
 .desktoppdf{
     display: block;
+    display: flex;
+    justify-content: center;
     @include sm{
         display: none;
     }
 }
 
 .mobilepdf{
+    
     display: none;
     width: 200px;
     @include sm{
         display: block;
+        display: flex;
+        justify-content: center;
     }
 }

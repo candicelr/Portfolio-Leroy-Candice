@@ -265,6 +265,8 @@
 
 .desktoppdf {
   display: block;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 500px) {
   .desktoppdf {
@@ -279,6 +281,8 @@
 @media screen and (max-width: 500px) {
   .mobilepdf {
     display: block;
+    display: flex;
+    justify-content: center;
   }
 }
 
