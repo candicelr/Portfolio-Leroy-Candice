@@ -103,3 +103,28 @@
         }
     }
 }
+
+.link-pdf{
+    text-decoration: none;
+    color: $background;
+    background-color: $text-color;
+    height: 50px;
+    width: 400px;
+    border-radius: $border-radius;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    }
+
+.link-pdf:hover{
+    color: $text-color;
+    background-color: $background;
+    border: 1px solid $text-color;
+    transition: background-color 0.3s, color 0.3s;
+    }
+.bloc-pdf{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}

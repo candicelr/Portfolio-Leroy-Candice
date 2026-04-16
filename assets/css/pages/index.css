@@ -156,7 +156,7 @@
 @media screen and (max-width: 500px) {
   .about__block2 {
     height: 70vh;
-    margin-top: 0px;
+    margin-top: 2px;
   }
 }
 .about__block2__img {
@@ -189,7 +189,7 @@
 }
 @media screen and (max-width: 375px) {
   .about__block2__img {
-    margin-bottom: 0px;
+    margin-bottom: -80px;
   }
 }
 
@@ -267,8 +267,8 @@
 .work__block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(7, auto);
-  grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img5 img3" "img1 img5 img3" "img4 img5 img6" "img4 img5 img6" "img4 img7 img7";
+  grid-template-rows: repeat(8, auto);
+  grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img5 img3" "img1 img5 img3" "img4 img5 img6" "img4 img5 img6" "img4 img7 img7" "img8 img8 img9";
   gap: 24px;
   padding: 150px;
 }
@@ -281,7 +281,7 @@
 }
 @media screen and (max-width: 500px) {
   .work__block {
-    padding: 30px;
+    padding: 35px;
   }
 }
 .work__block__img1 {
@@ -304,6 +304,12 @@
 }
 .work__block__img7 {
   grid-area: img7;
+}
+.work__block__img8 {
+  grid-area: img8;
+}
+.work__block__img9 {
+  grid-area: img9;
 }
 .work__block .img-wrap {
   position: relative;

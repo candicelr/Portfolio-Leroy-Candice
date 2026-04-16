@@ -232,4 +232,30 @@
   font-size: 20px;
 }
 
+.link-pdf {
+  text-decoration: none;
+  color: #FBF7EC;
+  background-color: #202329;
+  height: 50px;
+  width: 400px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.link-pdf:hover {
+  color: #202329;
+  background-color: #FBF7EC;
+  border: 1px solid #202329;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.bloc-pdf {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
 /*# sourceMappingURL=project.css.map */

@@ -15,15 +15,15 @@
             <div class="navbar__lists__list1">
                 <li class="navbar__categories">
                     <ion-icon name="star" class="navbar__icon"></ion-icon>
-                    <a href="index.html" class="navbar__link">Portfolio <br> Candice Leroy</a>
+                    <a href="index.html" class="navbar__link" aria-label="page d'accueil">Portfolio <br> Candice Leroy</a>
                 </li>
             </div>
             <div id="menu-burger" class="navbar__lists__list2">
-                <li class="navbar__categories"><a href="#about" class="navbar__link">A propos</a></li>
-                <li class="navbar__categories"><a href="#work" class="navbar__link">Travaux</a></li>
-                <li class="navbar__categories"><a href="#contact" class="navbar__link">Contacts</a></li>
+                <li class="navbar__categories"><a href="#about" class="navbar__link"  aria-label="A propos de moi">A propos</a></li>
+                <li class="navbar__categories"><a href="#work" class="navbar__link"  aria-label="Mes projets.">Travaux</a></li>
+                <li class="navbar__categories"><a href="#contact" class="navbar__link"  aria-label="Contacts">Contacts</a></li>
             </div>
-            <button id="button-burger" class="navbar__burger-button">
+            <button id="button-burger" class="navbar__burger-button" aria-controls="menu-burger" aria-label="ouvre/ferme le menu">
                 <div>
                     <div class="navbar__burger-button__top"></div>
                     <div class="navbar__burger-button__bottom"></div>
@@ -41,7 +41,7 @@
                 histoire et captent l’attention. Polyvalente, je m’adapte facilement à différents types de projets et je
                 cherche toujours à allier esthétique et fonctionnalité dans mon travail.
             </p>
-            <div class="about__block1__buttonblock">
+            <div class="about__block1__buttonblock" aria-label="Découvrir plus sur mes projets">
                 <a href="#work" class="about__block1__buttonblock__button">Découvrir plus</a>
             </div>
         </div>
@@ -51,7 +51,7 @@
     </div>
     <div class="skills">
         <div class="skills__block1">
-            <img src="assets/img/fond_compétences.png" alt="image de fond" class="skills__block1__img">
+            <img src="assets/img/fond_compétences.png" alt="image de fond beige avec des ombres de feuilles" class="skills__block1__img">
             <div>
                 <h2 class="skills__block1__title">Mes compétences</h2>
                 <div class="skills__block1__cards">
@@ -63,29 +63,37 @@
             </div>
         </div>
     </div>
-    <div class="work" id="work">
+    <div class="work" id="work" tabindex="-1">
         <h2 class="work__title">Mes projets</h2>
         <div class="work__block">
-            <a href="axiomefinance.html" class="work__block__img1 img-wrap">
-                <img src="assets/img/axiome_finance.png" alt="Logo Axiome Finance">
+            <a href="axiomefinance.html" class="work__block__img1 img-wrap" aria-label="détails du projet Axiome Finance">
+                <img src="assets/img/axiome_finance.png" alt="Mockup de mon logo Axiome Finance, présenté sur une devanture d'entreprise. ">
             </a>
-            <a href="doodle.html" class="work__block__img2 img-wrap">
-                <img src="assets/img/doodle.jpg" alt="Doodle">
+            <a href="doodle.html" class="work__block__img2 img-wrap" aria-label="détails du projet Doodle.">
+                <img src="assets/img/doodle.jpg" alt="mockup de mon doodle sur un savon.">
             </a>
-            <a href="affichecinematique.html" class="work__block__img3 img-wrap">
-                <img src="assets/img/affiche_cinématique.jpg" alt="Affiche cinématique">
+            <a href="affichecinematique.html" class="work__block__img3 img-wrap" aria-label="détails du projet affiches cinématiques.">
+                <img src="assets/img/affiche_cinématique.jpg" alt="Mockup d'une affiche cinématique présentant léonardo dicaprio détouré en noir et blanc,sur un fond noir et une bande colorée jaune sur ses yeux.">
             </a>
-            <a href="affichepropagande.html" class="work__block__img4 img-wrap">
-                <img src="assets/img/affiche_propagande.png" alt="Affiche de propagande">
+            <a href="affichepropagande.html" class="work__block__img4 img-wrap" aria-label="détails du projet affiche de propagande.">
+                <img src="assets/img/affiche_propagande.png"
+                    alt="Mockup representant un portant d'affiche avec mon affiche de propagande représentant une femme qui se libère de ses chaines et s'èlève vers la lumière.">
             </a>
-            <a href="afficheboxe.html" class="work__block__img5 img-wrap">
-                <img src="assets/img/affiche_boxe.png" alt="Affiche de boxe">
+            <a href="afficheboxe.html" class="work__block__img5 img-wrap" aria-label="détails du projet affiche de boxe.">
+                <img src="assets/img/affiche_boxe.png" alt="Mockup sous forme d'affiche de mon affiche de boxe présentant un boxeur en premier plan avec deux boxeurs qui s'affonte en arrière plan.">
             </a>
-            <a href="hackathon.html" class="work__block__img6 img-wrap">
-                <img src="assets/img/mockup-hackathhon.jpg" alt="Mockup hackathon">
+            <a href="hackathon.html" class="work__block__img6 img-wrap" aria-label="détails du projet Hackathon.">
+                <img src="assets/img/mockup-hackathhon.jpg"
+                    alt="Mockup téléphone de l'interface de connexion de l'application hackathon">
             </a>
-            <a href="maisonelise.html" class="work__block__img7 img-wrap">
-                <img src="assets/img/Logo_MaisonElise.png" alt="Logo Maison Elise">
+            <a href="maisonelise.html" class="work__block__img7 img-wrap" aria-label="détails du projet Maison Elise.">
+                <img src="assets/img/Logo_MaisonElise.png" alt="Mockup du logo Maison Elise, intégré sur une boite à bijou.">
+            </a>
+            <a href="fruité.html" class="work__block__img8 img-wrap" aria-label="détails du projet fruité">
+                <img src="assets/img/dégradédebouteillles.png" alt="Mockup des bouteilles fruité.">
+            </a>
+            <a href="joethaï.html" class="work__block__img9 img-wrap" aria-label="détails du projet Joe Thaï">
+                <img src="assets/img/mockuprestaurant.png" alt="Mockup restaurant Joe Thaï.">
             </a>
         </div>
     </div>
@@ -94,17 +102,16 @@
         <div class="footer__block">
             <div class="footer__block__linkedin">
                 <ion-icon name="logo-linkedin" class="footer__block__icon"></ion-icon>
-                <a href="https://www.linkedin.com/in/candice-leroy-1605332a4/">Linkedin</a>
+                <a href="https://www.linkedin.com/in/candice-leroy-1605332a4/" aria-label="Linkedin">Linkedin</a>
             </div>
             <div class="footer__block__email">
                 <ion-icon name="mail" class="footer__block__icon"></ion-icon>
-                <a href="leroycandice504@gmail.com">Email</a>
+                <a href="leroycandice504@gmail.com" aria-label="email">Email</a>
             </div>
             <div class="footer__block__phone">
                 <ion-icon name="call" class="footer__block__icon"></ion-icon>
-                <a href="tel:+33767652116">0767652116</a>
+                <a href="tel:+33767652116" aria-label="numéro de téléphone">0767652116</a>
             </div>
-
         </div>
 
         <script src="assets/js/script.js"></script>
