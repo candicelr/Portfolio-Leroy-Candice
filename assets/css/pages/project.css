@@ -258,4 +258,22 @@
   margin-bottom: 100px;
 }
 
+.desktoppdf {
+  display: block;
+}
+@media screen and (max-width: 500px) {
+  .desktoppdf {
+    display: none;
+  }
+}
+
+.mobilepdf {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .mobilepdf {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=project.css.map */

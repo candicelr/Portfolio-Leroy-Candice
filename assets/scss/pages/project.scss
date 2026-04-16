@@ -128,3 +128,16 @@
     justify-content: center;
     margin-bottom: 100px;
 }
+.desktoppdf{
+    display: block;
+    @include sm{
+        display: none;
+    }
+}
+
+.mobilepdf{
+    display: none;
+    @include sm{
+        display: block;
+    }
+}
