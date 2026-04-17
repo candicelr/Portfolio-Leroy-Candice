@@ -271,7 +271,7 @@
   grid-template-rows: repeat(10, auto);
   grid-template-areas: "img1 img2 img3" "img1 img2 img3" "img1 img5 img3" "img1 img5 img3" "img4 img5 img6" "img4 img5 img6" "img4 img7 img7" "img11 img10 img9" "img8 img8 img9";
   gap: 24px;
-  padding: 150px;
+  padding: 80px;
 }
 @media screen and (max-width: 1000px) {
   .work__block {
