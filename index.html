@@ -11,26 +11,26 @@
 
 <body>
     <nav class="navbar">
-        <ul class="navbar__lists">
-            <div class="navbar__lists__list1">
-                <li class="navbar__categories">
-                    <ion-icon name="star" class="navbar__icon"></ion-icon>
-                    <a href="index.html" class="navbar__link" aria-label="page d'accueil">Portfolio <br> Candice Leroy</a>
-                </li>
-            </div>
-            <div id="menu-burger" class="navbar__lists__list2">
-                <li class="navbar__categories"><a href="#about" class="navbar__link"  aria-label="A propos de moi">A propos</a></li>
-                <li class="navbar__categories"><a href="#work" class="navbar__link"  aria-label="Mes projets.">Travaux</a></li>
-                <li class="navbar__categories"><a href="#contact" class="navbar__link"  aria-label="Contacts">Contacts</a></li>
-            </div>
-            <button id="button-burger" class="navbar__burger-button" aria-controls="menu-burger" aria-label="ouvre/ferme le menu">
-                <div>
-                    <div class="navbar__burger-button__top"></div>
-                    <div class="navbar__burger-button__bottom"></div>
-                </div>
-            </button>
-        </ul>
-    </nav>
+    <ul class="navbar__lists">
+      <div class="navbar__lists__list1">
+        <li class="navbar__categories">
+          <ion-icon name="sparkles-outline" class="navbar__icon"></ion-icon>
+          <a href="index.html" class="navbar__link" aria-label="page d'accueil"><strong>Candice Leroy</strong><br><span style="font-family:var(--sans);font-size:11px;letter-spacing:.2em;color:var(--muted);text-transform:uppercase;">Portfolio</span></a>
+        </li>
+      </div>
+      <div id="menu-burger" class="navbar__lists__list2">
+        <li class="navbar__categories"><a href="#about" class="navbar__link">À propos</a></li>
+        <li class="navbar__categories"><a href="#work" class="navbar__link">Travaux</a></li>
+        <li class="navbar__categories"><a href="#contact" class="navbar__link">Contact</a></li>
+      </div>
+      <button id="button-burger" class="navbar__burger-button" aria-controls="menu-burger" aria-label="ouvre/ferme le menu">
+        <div>
+          <div class="navbar__burger-button__top"></div>
+          <div class="navbar__burger-button__bottom"></div>
+        </div>
+      </button>
+    </ul>
+  </nav>
     <div class="about" id="about">
         <div class="about__block1">
             <h1 class="about__block1__title">Candice Leroy</h1>
@@ -49,6 +49,13 @@
             <img src="assets/img/photo de profil Candice Leroy.png" alt="photo de profil" class="about__block2__img">
         </div>
     </div>
+    <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Graphisme</span><span>Direction artistique</span><span>UX / UI</span><span>Branding</span><span>Création de contenu</span><span>Marketing digital</span>
+      <span>Graphisme</span><span>Direction artistique</span><span>UX / UI</span><span>Branding</span><span>Création de contenu</span><span>Marketing digital</span>
+    </div>
+  </div>
+
     <div class="skills">
         <div class="skills__block1">
             <img src="assets/img/fond_compétences.png" alt="image de fond beige avec des ombres de feuilles" class="skills__block1__img">
@@ -66,47 +73,56 @@
     <div class="work" id="work" tabindex="-1">
         <h2 class="work__title">Mes projets</h2>
         <div class="work__block">
-            <a href="axiomefinance.html" class="work__block__img1 img-wrap" aria-label="détails du projet Axiome Finance">
-                <img src="assets/img/axiome_finance.png" alt="Mockup de mon logo Axiome Finance, présenté sur une devanture d'entreprise. ">
-            </a>
-            <a href="doodle.html" class="work__block__img2 img-wrap" aria-label="détails du projet Doodle.">
-                <img src="assets/img/doodle.jpg" alt="mockup de mon doodle sur un savon.">
-            </a>
-            <a href="affichecinematique.html" class="work__block__img3 img-wrap" aria-label="détails du projet affiches cinématiques.">
-                <img src="assets/img/affiche_cinématique.jpg" alt="Mockup d'une affiche cinématique présentant léonardo dicaprio détouré en noir et blanc,sur un fond noir et une bande colorée jaune sur ses yeux.">
-            </a>
-            <a href="affichepropagande.html" class="work__block__img4 img-wrap" aria-label="détails du projet affiche de propagande.">
-                <img src="assets/img/affiche_propagande.png"
-                    alt="Mockup representant un portant d'affiche avec mon affiche de propagande représentant une femme qui se libère de ses chaines et s'èlève vers la lumière.">
-            </a>
-            <a href="afficheboxe.html" class="work__block__img5 img-wrap" aria-label="détails du projet affiche de boxe.">
-                <img src="assets/img/affiche_boxe.png" alt="Mockup sous forme d'affiche de mon affiche de boxe présentant un boxeur en premier plan avec deux boxeurs qui s'affonte en arrière plan.">
-            </a>
-            <a href="hackathon.html" class="work__block__img6 img-wrap" aria-label="détails du projet Hackathon.">
-                <img src="assets/img/mockup-hackathhon.jpg"
-                    alt="Mockup téléphone de l'interface de connexion de l'application hackathon">
-            </a>
-            <a href="maisonelise.html" class="work__block__img7 img-wrap" aria-label="détails du projet Maison Elise.">
-                <img src="assets/img/Logo_MaisonElise.png" alt="Mockup du logo Maison Elise, intégré sur une boite à bijou.">
-            </a>
-            <a href="fruité.html" class="work__block__img8 img-wrap" aria-label="détails du projet fruité">
-                <img src="assets/img/dégradédebouteillles.png" alt="Mockup des bouteilles fruité.">
-            </a>
-            <a href="joethaï.html" class="work__block__img9 img-wrap" aria-label="détails du projet Joe Thaï">
-                <img src="assets/img/mockuprestaurant.png" alt="Mockup restaurant Joe Thaï.">
-            </a>
-            <a href="accessmarket.html" class="work__block__img10 img-wrap" aria-label="détails du projet Access Market">
-                <img src="assets/img/accessMarket.png" alt="Access Market App">
-            </a>
-            <a href="paulinemode.html" class="work__block__img11 img-wrap" aria-label="détails du projet Pauline Mode">
-                <img src="assets/img/PaulineMode.svg" alt="Pauline Mode showroom">
-            </a>
-            
-            
-        </div>
+
+    <a href="axiomefinance.html" class="work__block__img1 img-wrap" data-title="Axiome Finance" aria-label="détails du projet Axiome Finance">
+        <img src="assets/img/axiome_finance.png" alt="Mockup de mon logo Axiome Finance, présenté sur une devanture d'entreprise.">
+    </a>
+
+    <a href="doodle.html" class="work__block__img2 img-wrap" data-title="Doodle" aria-label="détails du projet Doodle.">
+        <img src="assets/img/doodle.jpg" alt="mockup de mon doodle sur un savon.">
+    </a>
+
+    <a href="affichecinematique.html" class="work__block__img3 img-wrap" data-title="Affiche Cinématique" aria-label="détails du projet affiches cinématiques.">
+        <img src="assets/img/affiche_cinématique.jpg" alt="Mockup d'une affiche cinématique présentant léonardo dicaprio détouré en noir et blanc,sur un fond noir et une bande colorée jaune sur ses yeux.">
+    </a>
+
+    <a href="affichepropagande.html" class="work__block__img4 img-wrap" data-title="Affiche Propagande" aria-label="détails du projet affiche de propagande.">
+        <img src="assets/img/affiche_propagande.png" alt="Mockup representant un portant d'affiche avec mon affiche de propagande représentant une femme qui se libère de ses chaines et s'èlève vers la lumière.">
+    </a>
+
+    <a href="afficheboxe.html" class="work__block__img5 img-wrap" data-title="Affiche Boxe" aria-label="détails du projet affiche de boxe.">
+        <img src="assets/img/affiche_boxe.png" alt="Mockup sous forme d'affiche de mon affiche de boxe présentant un boxeur en premier plan avec deux boxeurs qui s'affonte en arrière plan.">
+    </a>
+
+    <a href="hackathon.html" class="work__block__img6 img-wrap" data-title="Hackathon" aria-label="détails du projet Hackathon.">
+        <img src="assets/img/mockup-hackathhon.jpg" alt="Mockup téléphone de l'interface de connexion de l'application hackathon">
+    </a>
+
+    <a href="maisonelise.html" class="work__block__img7 img-wrap" data-title="Maison Elise" aria-label="détails du projet Maison Elise.">
+        <img src="assets/img/Logo_MaisonElise.png" alt="Mockup du logo Maison Elise, intégré sur une boite à bijou.">
+    </a>
+
+    <a href="fruité.html" class="work__block__img8 img-wrap" data-title="Fruité" aria-label="détails du projet fruité">
+        <img src="assets/img/dégradédebouteillles.png" alt="Mockup des bouteilles fruité.">
+    </a>
+
+    <a href="joethaï.html" class="work__block__img9 img-wrap" data-title="Joe Thaï" aria-label="détails du projet Joe Thaï">
+        <img src="assets/img/mockuprestaurant.png" alt="Mockup restaurant Joe Thaï.">
+    </a>
+
+    <a href="accessmarket.html" class="work__block__img10 img-wrap" data-title="Access Market" aria-label="détails du projet Access Market">
+        <img src="assets/img/accessMarket.png" alt="Access Market App">
+    </a>
+
+    <a href="paulinemode.html" class="work__block__img11 img-wrap" data-title="Pauline Mode" aria-label="détails du projet Pauline Mode">
+        <img src="assets/img/PaulineMode.svg" alt="Pauline Mode showroom">
+    </a>
+
+</div>
     </div>
     </div>
     <div class="footer" id="contact">
+        <h2 class="footer__heading" data-reveal>Si vous recherchez <em>une alternante motivée</em> n'hésitez pas à me contacter.</h2>
         <div class="footer__block">
             <div class="footer__block__linkedin">
                 <ion-icon name="logo-linkedin" class="footer__block__icon"></ion-icon>
@@ -123,6 +139,9 @@
         </div>
 
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 
